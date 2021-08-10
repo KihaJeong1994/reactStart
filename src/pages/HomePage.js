@@ -24,7 +24,6 @@ const HomePage = () => {
   }, []);
   return (
     <div>
-      <Header />
       <Home
         boards={boards}
         number={number}
@@ -32,7 +31,6 @@ const HomePage = () => {
         setNumber={setNumber}
         user={user}
       />
-      <Footer />
     </div>
   );
 };
