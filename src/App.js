@@ -7,15 +7,16 @@ import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import { Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './components/Navigation';
+import ListPage from './pages/ListPage';
 
 // useRef(디자인)
 //dom을 변경할 때 사용
 function App() {
   return (
     <div>
-      <Header />
-      <Route path="/" exact={true} component={HomePage} />
-      <Route path="/login/:id" exact={true} component={LoginPage} />
+      <Navigation />
+      <ListPage />
       <Footer />
     </div>
   );
